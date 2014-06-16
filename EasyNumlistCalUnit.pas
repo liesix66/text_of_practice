@@ -19,7 +19,7 @@ type
     InputBtn: TButton;
     ClearBtn: TButton;
 
-    procedure FormKeyDown(Sender: TObject; Var Key: Word;Shift: TShiftState);
+    procedure FormKeyPress(Sender: TObject;Var Key: Char);
     procedure InputBtnClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure CalculateBtnClick(Sender: TObject);
@@ -45,17 +45,11 @@ begin
   m_Count := 0 ;
 end;
 
-procedure  TEasyNumlistCalForm.FormKeyDown(Sender: TObject;
-              Var Key: Word;Shift: TShiftState);
+procedure  TEasyNumlistCalForm.FormKeyPress(Sender: TObject;Var Key: Char);
 begin
-  case Key of
-    VK_Return :
-    if (Edit1.Text <> '' )then
-    begin
-      Numlookmemo.Lines.Add(Edit1.Text);
-      m_NumSum  := StrToInt(Edit1.Text) + m_NumSum;
-      Inc(m_Count);
-    end;
+  if Key = #13 then
+  begin
+  InputBtn.Click;
   end;
 end;
 
