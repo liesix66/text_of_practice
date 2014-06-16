@@ -28,7 +28,7 @@ type
   end;
 
 var
-  gEasyTempConverForm : TEasyTempConverForm;
+  EasyTempConverForm : TEasyTempConverForm;
 
 implementation
 

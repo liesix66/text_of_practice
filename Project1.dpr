@@ -7,7 +7,9 @@ uses
   EasyCircleCalUnit in 'EasyCircleCalUnit.pas' {EasyCircleCalForm},
   CutNumVauleUnit in 'CutNumVauleUnit.pas' {CutNumVauleForm},
   EasyTaxesTrialUnit in 'EasyTaxesTrialUnit.pas' {EasyTaxesTrialForm},
-  EasyTempConverUnit in 'EasyTempConverUnit.pas' {EasyTempConverForm};
+  EasyTempConverUnit in 'EasyTempConverUnit.pas' {EasyTempConverForm},
+  EasyNumlistCalUnit in 'EasyNumlistCalUnit.pas' {EasyNumlistCalForm},
+  CommonUnit in 'CommonUnit.pas';
 
 {$R *.res}
 
@@ -17,8 +19,9 @@ begin
   Application.CreateForm(TSixPractice, SixPractice);
   Application.CreateForm(TEasyNumCalForm, EasyNumCalForm);
   Application.CreateForm(TEasyCircleCalForm, EasyCircleCalForm);
-  Application.CreateForm(TCutNumVauleForm, gCutNumVauleForm);
-  Application.CreateForm(TEasyTaxesTrialForm, gEasyTaxesTrialForm);
-  Application.CreateForm(TEasyTempConverForm, gEasyTempConverForm);
+  Application.CreateForm(TCutNumVauleForm, CutNumVauleForm);
+  Application.CreateForm(TEasyTaxesTrialForm, EasyTaxesTrialForm);
+  Application.CreateForm(TEasyTempConverForm, EasyTempConverForm);
+  Application.CreateForm(TEasyNumlistCalForm, EasyNumlistCalForm);
   Application.Run;
 end.

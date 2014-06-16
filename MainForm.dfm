@@ -2,8 +2,8 @@ object SixPractice: TSixPractice
   Left = 0
   Top = 0
   Caption = 'SixPractice'
-  ClientHeight = 549
-  ClientWidth = 590
+  ClientHeight = 359
+  ClientWidth = 473
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -57,5 +57,14 @@ object SixPractice: TSixPractice
     Caption = #31777#26131#28331#24230#36681#25563
     TabOrder = 4
     OnClick = EasyTempConverBtnClick
+  end
+  object EasyNumlistCalBtn2: TButton
+    Left = 168
+    Top = 56
+    Width = 105
+    Height = 33
+    Caption = #31777#26131#25976#23383#28165#21934#35336#31639
+    TabOrder = 5
+    OnClick = EasyNumlistCalBtn2Click
   end
 end

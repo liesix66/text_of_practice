@@ -35,7 +35,7 @@ type
   end;
 
 var
-  gCutNumVauleForm: TCutNumVauleForm;
+  CutNumVauleForm: TCutNumVauleForm;
 
 implementation
 
