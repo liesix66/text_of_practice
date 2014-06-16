@@ -1,0 +1,109 @@
+object EasyCircleCalForm: TEasyCircleCalForm
+  Left = 0
+  Top = 0
+  Caption = 'EasyCircleCalForm'
+  ClientHeight = 314
+  ClientWidth = 358
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 32
+    Width = 162
+    Height = 33
+    Caption = #31777#26131#22291#30340#35336#31639
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 32
+    Top = 120
+    Width = 84
+    Height = 25
+    Caption = #36664#20837#21322#24465
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 74
+    Top = 176
+    Width = 42
+    Height = 25
+    Caption = #38754#31309
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 74
+    Top = 240
+    Width = 42
+    Height = 25
+    Caption = #22291#21608
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 152
+    Top = 120
+    Width = 113
+    Height = 21
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 152
+    Top = 176
+    Width = 113
+    Height = 21
+    ReadOnly = True
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 152
+    Top = 240
+    Width = 113
+    Height = 21
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object CalculateBtn: TButton
+    Left = 288
+    Top = 117
+    Width = 57
+    Height = 41
+    Caption = #35336#31639
+    TabOrder = 3
+    OnClick = CalculateBtnClick
+  end
+  object ExitBtn: TButton
+    Left = 288
+    Top = 200
+    Width = 57
+    Height = 65
+    Caption = #38626#38283
+    TabOrder = 4
+    OnClick = ExitBtnClick
+  end
+end

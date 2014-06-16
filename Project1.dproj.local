@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/06/13 09:25:32.000.343,=C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/06/13 09:26:04.000.765,C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\MainForm.pas=C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/06/13 09:26:04.000.765,C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\MainForm.dfm=C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2014/06/13 09:28:17.000.921,=C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/06/13 09:28:31.000.140,C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\CoreToGUI.pas=C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/06/13 09:28:42.000.171,=C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/06/13 09:28:52.000.828,C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\GUIToCore.pas=C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/06/13 09:36:32.000.187,=C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2014/06/13 09:39:16.000.734,D:\Six001\Practice Exercise2\Unit2.pas=C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2014/06/13 09:39:16.000.734,D:\Six001\Practice Exercise2\Unit2.dfm=C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2014/06/13 09:39:17.000.859,D:\Six001\Practice Exercise2\MainForm.pas=C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\MainForm.pas</Transaction>
+    <Transaction>2014/06/13 09:39:17.000.859,D:\Six001\Practice Exercise2\MainForm.dfm=C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\MainForm.dfm</Transaction>
+    <Transaction>2014/06/13 09:39:18.000.796,D:\Six001\Practice Exercise2\Project1.dproj=C:\Documents and Settings\XP\My Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2014/06/13 09:43:39.000.812,D:\Six001\Practice Exercise2\Unit2.dfm=D:\Six001\Practice Exercise2\EasyNumCalculate.dfm</Transaction>
+    <Transaction>2014/06/13 09:43:39.000.812,D:\Six001\Practice Exercise2\Unit2.pas=D:\Six001\Practice Exercise2\EasyNumCalculate.pas</Transaction>
+    <Transaction>2014/06/13 09:43:52.000.859,D:\Six001\Practice Exercise2\EasyNumCalculate.dfm=D:\Six001\Practice Exercise2\EasyNumCalForm.dfm</Transaction>
+    <Transaction>2014/06/13 09:43:52.000.859,D:\Six001\Practice Exercise2\EasyNumCalculate.pas=D:\Six001\Practice Exercise2\EasyNumCalForm.pas</Transaction>
+    <Transaction>2014/06/13 10:05:46.000.187,D:\Six001\Practice Exercise2\EasyNumCalForm.pas=D:\Six001\Practice Exercise2\EasyNumCalUnit.pas</Transaction>
+    <Transaction>2014/06/13 10:05:46.000.187,D:\Six001\Practice Exercise2\EasyNumCalForm.dfm=D:\Six001\Practice Exercise2\EasyNumCalUnit.dfm</Transaction>
+    <Transaction>2014/06/13 10:55:18.000.406,=D:\Six001\Practice Exercise2\Unit2.pas</Transaction>
+    <Transaction>2014/06/13 10:55:43.000.875,D:\Six001\Practice Exercise2\EasyCircleCalUnit.pas=D:\Six001\Practice Exercise2\Unit2.pas</Transaction>
+    <Transaction>2014/06/13 10:55:43.000.875,D:\Six001\Practice Exercise2\EasyCircleCalUnit.dfm=D:\Six001\Practice Exercise2\Unit2.dfm</Transaction>
+    <Transaction>2014/06/13 13:02:22.000.593,=D:\Six001\Practice Exercise2\Unit2.pas</Transaction>
+    <Transaction>2014/06/13 13:02:45.000.625,D:\Six001\Practice Exercise2\CutNumVauleUnit.dfm=D:\Six001\Practice Exercise2\Unit2.dfm</Transaction>
+    <Transaction>2014/06/13 13:02:45.000.625,D:\Six001\Practice Exercise2\CutNumVauleUnit.pas=D:\Six001\Practice Exercise2\Unit2.pas</Transaction>
+    <Transaction>2014/06/13 15:10:40.000.531,=D:\Six001\Practice Exercise2\Unit2.pas</Transaction>
+    <Transaction>2014/06/13 15:12:21.000.625,D:\Six001\Practice Exercise2\EasyTaxesTrialUnit.dfm=D:\Six001\Practice Exercise2\Unit2.dfm</Transaction>
+    <Transaction>2014/06/13 15:12:21.000.625,D:\Six001\Practice Exercise2\EasyTaxesTrialUnit.pas=D:\Six001\Practice Exercise2\Unit2.pas</Transaction>
+    <Transaction>2014/06/13 17:26:48.718,=D:\Six001\Practice Exercise2\Unit1.pas</Transaction>
+    <Transaction>2014/06/13 17:31:31.031,D:\Six001\Practice Exercise2\TempConverUnit.dfm=D:\Six001\Practice Exercise2\Unit1.dfm</Transaction>
+    <Transaction>2014/06/13 17:31:31.031,D:\Six001\Practice Exercise2\TempConverUnit.pas=D:\Six001\Practice Exercise2\Unit1.pas</Transaction>
+    <Transaction>2014/06/13 17:51:43.609,D:\Six001\Practice Exercise2\EasyTempConverUnit.dfm=D:\Six001\Practice Exercise2\TempConverUnit.dfm</Transaction>
+    <Transaction>2014/06/13 17:51:43.609,D:\Six001\Practice Exercise2\EasyTempConverUnit.pas=D:\Six001\Practice Exercise2\TempConverUnit.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="MainForm.pas"/>
+    <File Path="MainForm.dfm"/>
+    <File Path="EasyNumCalUnit.pas"/>
+    <File Path="EasyNumCalUnit.dfm"/>
+    <File Path="EasyCircleCalUnit.pas"/>
+    <File Path="EasyCircleCalUnit.dfm"/>
+    <File Path="CutNumVauleUnit.pas"/>
+    <File Path="CutNumVauleUnit.dfm"/>
+    <File Path="EasyTaxesTrialUnit.pas"/>
+    <File Path="EasyTaxesTrialUnit.dfm"/>
+    <File Path="EasyTempConverUnit.pas"/>
+    <File Path="EasyTempConverUnit.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
