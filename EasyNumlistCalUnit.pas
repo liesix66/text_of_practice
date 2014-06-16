@@ -49,7 +49,7 @@ procedure  TEasyNumlistCalForm.FormKeyPress(Sender: TObject;Var Key: Char);
 begin
   if Key = #13 then
   begin
-  InputBtn.Click;
+   InputBtn.Click;
   end;
 end;
 
@@ -84,6 +84,7 @@ begin
   m_Average := 0 ;
   m_Count := 0 ;
   Numlookmemo.Lines.Text := '';
+  Edit1.Text := '';
 end;
 
 procedure TEasyNumlistCalForm.ExitBtnClick(Sender: TObject);

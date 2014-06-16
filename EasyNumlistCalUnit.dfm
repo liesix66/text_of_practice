@@ -60,6 +60,7 @@ object EasyNumlistCalForm: TEasyNumlistCalForm
     ParentFont = False
     TabOrder = 1
     Text = '0'
+    OnKeyPress = FormKeyPress
   end
   object CalculateBtn: TButton
     Left = 8
