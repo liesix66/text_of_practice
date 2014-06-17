@@ -67,4 +67,13 @@ object SixPractice: TSixPractice
     TabOrder = 5
     OnClick = EasyNumlistCalBtn2Click
   end
+  object NumOutputBtn: TButton
+    Left = 168
+    Top = 120
+    Width = 105
+    Height = 33
+    Caption = #31777#26131#25976#22411#36664#20986
+    TabOrder = 6
+    OnClick = NumOutputBtnClick
+  end
 end

@@ -9,7 +9,8 @@ uses
   EasyTaxesTrialUnit in 'EasyTaxesTrialUnit.pas' {EasyTaxesTrialForm},
   EasyTempConverUnit in 'EasyTempConverUnit.pas' {EasyTempConverForm},
   EasyNumlistCalUnit in 'EasyNumlistCalUnit.pas' {EasyNumlistCalForm},
-  CommonUnit in 'CommonUnit.pas';
+  CommonUnit in 'CommonUnit.pas',
+  NumOutputUnit in 'NumOutputUnit.pas' {Numoutputform};
 
 {$R *.res}
 
@@ -23,5 +24,6 @@ begin
   Application.CreateForm(TEasyTaxesTrialForm, EasyTaxesTrialForm);
   Application.CreateForm(TEasyTempConverForm, EasyTempConverForm);
   Application.CreateForm(TEasyNumlistCalForm, EasyNumlistCalForm);
+  Application.CreateForm(TNumoutputform, Numoutputform);
   Application.Run;
 end.

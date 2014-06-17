@@ -15,12 +15,14 @@ type
     EasyTaxesTrialBtn: TButton;
     EasyTempConverBtn: TButton;
     EasyNumlistCalBtn2: TButton;
+    NumOutputBtn: TButton;
     procedure EasyNumCalBtnClick(Sender: TObject);
     procedure EasyCircleCalBtnClick(Sender: TObject);
     procedure CutNumVauleBtn2Click(Sender: TObject);
     procedure EasyTaxesTrialBtnClick(Sender: TObject);
     procedure EasyTempConverBtnClick(Sender: TObject);
     procedure EasyNumlistCalBtn2Click(Sender: TObject);
+    procedure NumOutputBtnClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,7 +38,7 @@ implementation
 
 uses
 EasyNumCalUnit, EasyCircleCalUnit, CutNumVauleUnit ,EasyTaxesTrialUnit,
-EasyTempConverUnit,EasyNumlistCalUnit;
+EasyTempConverUnit,EasyNumlistCalUnit,NumOutputUnit;
 
 procedure TSixPractice.EasyCircleCalBtnClick(Sender: TObject);
 begin
@@ -61,6 +63,11 @@ end;
 procedure TSixPractice.EasyTempConverBtnClick(Sender: TObject);
 begin
   EasyTempConverForm.ShowModal;
+end;
+
+procedure TSixPractice.NumOutputBtnClick(Sender: TObject);
+begin
+  NumOutputForm.ShowModal;
 end;
 
 procedure TSixPractice.CutNumVauleBtn2Click(Sender: TObject);

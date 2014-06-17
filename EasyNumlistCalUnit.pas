@@ -8,7 +8,6 @@ uses
   Vcl.Graphics,Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
   MainForm;
 
-
 type
   TEasyNumlistCalForm = class(TForm)
     NumLookMemo: TMemo;
