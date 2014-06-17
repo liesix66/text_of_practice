@@ -16,6 +16,7 @@ type
     EasyTempConverBtn: TButton;
     EasyNumlistCalBtn2: TButton;
     NumOutputBtn: TButton;
+    EasyMultTable: TButton;
     procedure EasyNumCalBtnClick(Sender: TObject);
     procedure EasyCircleCalBtnClick(Sender: TObject);
     procedure CutNumVauleBtn2Click(Sender: TObject);
@@ -23,6 +24,7 @@ type
     procedure EasyTempConverBtnClick(Sender: TObject);
     procedure EasyNumlistCalBtn2Click(Sender: TObject);
     procedure NumOutputBtnClick(Sender: TObject);
+    procedure EasyMultTableClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,11 +40,16 @@ implementation
 
 uses
 EasyNumCalUnit, EasyCircleCalUnit, CutNumVauleUnit ,EasyTaxesTrialUnit,
-EasyTempConverUnit,EasyNumlistCalUnit,NumOutputUnit;
+EasyTempConverUnit, EasyNumlistCalUnit, NumOutputUnit, EasyMultTableUnit;
 
 procedure TSixPractice.EasyCircleCalBtnClick(Sender: TObject);
 begin
   EasyCircleCalForm.ShowModal;
+end;
+
+procedure TSixPractice.EasyMultTableClick(Sender: TObject);
+begin
+  EasyMultTableForm.ShowModal;
 end;
 
 procedure TSixPractice.EasyNumCalBtnClick(Sender: TObject);

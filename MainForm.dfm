@@ -76,4 +76,13 @@ object SixPractice: TSixPractice
     TabOrder = 6
     OnClick = NumOutputBtnClick
   end
+  object EasyMultTable: TButton
+    Left = 168
+    Top = 184
+    Width = 105
+    Height = 33
+    Caption = #31777#26131#20056#27861#34920
+    TabOrder = 7
+    OnClick = EasyMultTableClick
+  end
 end

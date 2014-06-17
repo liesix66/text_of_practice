@@ -10,7 +10,8 @@ uses
   EasyTempConverUnit in 'EasyTempConverUnit.pas' {EasyTempConverForm},
   EasyNumlistCalUnit in 'EasyNumlistCalUnit.pas' {EasyNumlistCalForm},
   CommonUnit in 'CommonUnit.pas',
-  NumOutputUnit in 'NumOutputUnit.pas' {Numoutputform};
+  NumOutputUnit in 'NumOutputUnit.pas' {Numoutputform},
+  EasyMultTableUnit in 'EasyMultTableUnit.pas' {EasyMultTableForm};
 
 {$R *.res}
 
@@ -25,5 +26,6 @@ begin
   Application.CreateForm(TEasyTempConverForm, EasyTempConverForm);
   Application.CreateForm(TEasyNumlistCalForm, EasyNumlistCalForm);
   Application.CreateForm(TNumoutputform, Numoutputform);
+  Application.CreateForm(TEasyMultTableForm, EasyMultTableForm);
   Application.Run;
 end.
