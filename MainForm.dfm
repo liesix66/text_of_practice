@@ -85,4 +85,13 @@ object SixPractice: TSixPractice
     TabOrder = 7
     OnClick = EasyMultTableClick
   end
+  object SeqSrachBtn: TButton
+    Left = 168
+    Top = 240
+    Width = 105
+    Height = 33
+    Caption = #25976#21015#25628#23563
+    TabOrder = 8
+    OnClick = SeqSrachBtnClick
+  end
 end

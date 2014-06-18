@@ -14,8 +14,6 @@ type
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
-    Edit1: TEdit;
-    Edit2: TEdit;
     CalculateBtn: TButton;
     Edit3: TEdit;
     Label5: TLabel;
@@ -26,6 +24,8 @@ type
     ClearBtn: TButton;
     limitNumBtn: TButton;
     Label7: TLabel;
+    ComboBox1: TComboBox;
+    ComboBox2: TComboBox;
     procedure CalculateBtnClick(Sender: TObject);
     procedure ExitBtnClick(Sender: TObject);
     procedure ClearBtnClick(Sender: TObject);
@@ -51,24 +51,11 @@ begin
   InputNum1 := 0 ;
   InputNum2 := 0 ;
 
-   //check have number
-  if edit1.Text = '' then
+  if Combobox1.Text <> '' then
+  if Combobox2.Text <> '' then
   begin
-    showmessage ('請輸入數字') ;
-    exit ;
-  end
-  else
-  if edit2.Text = '' then
-  begin
-    showmessage ('請輸入數字') ;
-    exit ;
-  end;
-
-  if edit1.Text <> '' then
-  if edit2.Text <> '' then
-  begin
-    InputNum1 := StrToInt(edit1.Text) ;
-    InputNum2 := StrToInt(edit2.Text) ;
+    InputNum1 := StrToInt(Combobox1.Text) ;
+    InputNum2 := StrToInt(Combobox2.Text) ;
   end;
 
   if m_LimitNum = true then
@@ -108,8 +95,8 @@ end;
 
 procedure TEasyNumCalForm.ClearBtnClick(Sender: TObject);
 begin
-    Edit1.Text := '' ;
-    Edit2.Text := '' ;
+    Combobox1.Text := '0' ;
+    Combobox2.Text := '0' ;
     Edit3.Text := '' ;
     Edit4.Text := '' ;
     Edit5.Text := '' ;

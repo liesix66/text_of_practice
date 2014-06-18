@@ -17,6 +17,7 @@ type
     EasyNumlistCalBtn2: TButton;
     NumOutputBtn: TButton;
     EasyMultTable: TButton;
+    SeqSrachBtn: TButton;
     procedure EasyNumCalBtnClick(Sender: TObject);
     procedure EasyCircleCalBtnClick(Sender: TObject);
     procedure CutNumVauleBtn2Click(Sender: TObject);
@@ -25,6 +26,7 @@ type
     procedure EasyNumlistCalBtn2Click(Sender: TObject);
     procedure NumOutputBtnClick(Sender: TObject);
     procedure EasyMultTableClick(Sender: TObject);
+    procedure SeqSrachBtnClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,7 +42,8 @@ implementation
 
 uses
 EasyNumCalUnit, EasyCircleCalUnit, CutNumVauleUnit ,EasyTaxesTrialUnit,
-EasyTempConverUnit, EasyNumlistCalUnit, NumOutputUnit, EasyMultTableUnit;
+EasyTempConverUnit, EasyNumlistCalUnit, NumOutputUnit, EasyMultTableUnit,
+SeqSerchUnit;
 
 procedure TSixPractice.EasyCircleCalBtnClick(Sender: TObject);
 begin
@@ -75,6 +78,11 @@ end;
 procedure TSixPractice.NumOutputBtnClick(Sender: TObject);
 begin
   NumOutputForm.ShowModal;
+end;
+
+procedure TSixPractice.SeqSrachBtnClick(Sender: TObject);
+begin
+  SeqSerchForm.ShowModal;
 end;
 
 procedure TSixPractice.CutNumVauleBtn2Click(Sender: TObject);

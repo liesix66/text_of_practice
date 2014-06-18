@@ -103,29 +103,13 @@ object EasyNumCalForm: TEasyNumCalForm
     Font.Style = []
     ParentFont = False
   end
-  object Edit1: TEdit
-    Left = 104
-    Top = 104
-    Width = 209
-    Height = 21
-    NumbersOnly = True
-    TabOrder = 0
-  end
-  object Edit2: TEdit
-    Left = 104
-    Top = 146
-    Width = 209
-    Height = 21
-    NumbersOnly = True
-    TabOrder = 1
-  end
   object CalculateBtn: TButton
     Left = 335
     Top = 104
     Width = 66
     Height = 63
     Caption = #35336#31639
-    TabOrder = 2
+    TabOrder = 0
     OnClick = CalculateBtnClick
   end
   object Edit3: TEdit
@@ -134,7 +118,7 @@ object EasyNumCalForm: TEasyNumCalForm
     Width = 209
     Height = 21
     ReadOnly = True
-    TabOrder = 3
+    TabOrder = 1
   end
   object Edit4: TEdit
     Left = 104
@@ -142,7 +126,7 @@ object EasyNumCalForm: TEasyNumCalForm
     Width = 209
     Height = 21
     ReadOnly = True
-    TabOrder = 4
+    TabOrder = 2
   end
   object Edit5: TEdit
     Left = 104
@@ -150,7 +134,7 @@ object EasyNumCalForm: TEasyNumCalForm
     Width = 209
     Height = 21
     ReadOnly = True
-    TabOrder = 5
+    TabOrder = 3
   end
   object ExitBtn: TButton
     Left = 335
@@ -158,7 +142,7 @@ object EasyNumCalForm: TEasyNumCalForm
     Width = 66
     Height = 57
     Caption = #38626#38283
-    TabOrder = 6
+    TabOrder = 4
     OnClick = ExitBtnClick
   end
   object ClearBtn: TButton
@@ -167,7 +151,7 @@ object EasyNumCalForm: TEasyNumCalForm
     Width = 66
     Height = 65
     Caption = #28165#38500#25976#23383
-    TabOrder = 7
+    TabOrder = 5
     OnClick = ClearBtnClick
   end
   object limitNumBtn: TButton
@@ -176,7 +160,67 @@ object EasyNumCalForm: TEasyNumCalForm
     Width = 66
     Height = 57
     Caption = #38480#23450'3'#20301#25976
-    TabOrder = 8
+    TabOrder = 6
     OnClick = limitNumBtnClick
+  end
+  object ComboBox1: TComboBox
+    Left = 104
+    Top = 104
+    Width = 97
+    Height = 21
+    TabOrder = 7
+    Text = '0'
+    Items.Strings = (
+      '0'
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+      '8'
+      '9'
+      '10'
+      '11'
+      '12'
+      '13'
+      '14'
+      '15'
+      '16'
+      '17'
+      '18'
+      '19'
+      '20')
+  end
+  object ComboBox2: TComboBox
+    Left = 104
+    Top = 153
+    Width = 97
+    Height = 21
+    TabOrder = 8
+    Text = '0'
+    Items.Strings = (
+      '0'
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+      '8'
+      '9'
+      '10'
+      '11'
+      '12'
+      '13'
+      '14'
+      '15'
+      '16'
+      '17'
+      '18'
+      '19'
+      '20')
   end
 end
