@@ -18,6 +18,7 @@ type
     NumOutputBtn: TButton;
     EasyMultTable: TButton;
     SeqSrachBtn: TButton;
+    PlanetSerchBtn: TButton;
     procedure EasyNumCalBtnClick(Sender: TObject);
     procedure EasyCircleCalBtnClick(Sender: TObject);
     procedure CutNumVauleBtn2Click(Sender: TObject);
@@ -27,6 +28,7 @@ type
     procedure NumOutputBtnClick(Sender: TObject);
     procedure EasyMultTableClick(Sender: TObject);
     procedure SeqSrachBtnClick(Sender: TObject);
+    procedure PlanetSerchBtnClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,7 +45,7 @@ implementation
 uses
 EasyNumCalUnit, EasyCircleCalUnit, CutNumVauleUnit ,EasyTaxesTrialUnit,
 EasyTempConverUnit, EasyNumlistCalUnit, NumOutputUnit, EasyMultTableUnit,
-SeqSerchUnit;
+SeqSerchUnit, PlanetComBoxUnit;
 
 procedure TSixPractice.EasyCircleCalBtnClick(Sender: TObject);
 begin
@@ -78,6 +80,11 @@ end;
 procedure TSixPractice.NumOutputBtnClick(Sender: TObject);
 begin
   NumOutputForm.ShowModal;
+end;
+
+procedure TSixPractice.PlanetSerchBtnClick(Sender: TObject);
+begin
+  PlanetComboxForm.ShowModal;
 end;
 
 procedure TSixPractice.SeqSrachBtnClick(Sender: TObject);

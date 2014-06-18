@@ -94,4 +94,13 @@ object SixPractice: TSixPractice
     TabOrder = 8
     OnClick = SeqSrachBtnClick
   end
+  object PlanetSerchBtn: TButton
+    Left = 168
+    Top = 296
+    Width = 105
+    Height = 33
+    Caption = #34892#26143#36039#26009
+    TabOrder = 9
+    OnClick = PlanetSerchBtnClick
+  end
 end

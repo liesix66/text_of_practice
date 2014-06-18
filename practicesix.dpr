@@ -12,7 +12,8 @@ uses
   CommonUnit in 'CommonUnit.pas',
   NumOutputUnit in 'NumOutputUnit.pas' {Numoutputform},
   EasyMultTableUnit in 'EasyMultTableUnit.pas' {EasyMultTableForm},
-  SeqSerchUnit in 'SeqSerchUnit.pas' {SeqSerchForm};
+  SeqSerchUnit in 'SeqSerchUnit.pas' {SeqSerchForm},
+  PlanetComboxUnit in 'PlanetComboxUnit.pas' {PlanetComBoxForm};
 
 {$R *.res}
 
@@ -29,5 +30,6 @@ begin
   Application.CreateForm(TNumoutputform, Numoutputform);
   Application.CreateForm(TEasyMultTableForm, EasyMultTableForm);
   Application.CreateForm(TSeqSerchForm, SeqSerchForm);
+  Application.CreateForm(TPlanetComBoxForm, PlanetComBoxForm);
   Application.Run;
 end.
