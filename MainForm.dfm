@@ -103,4 +103,13 @@ object SixPractice: TSixPractice
     TabOrder = 9
     OnClick = PlanetSerchBtnClick
   end
+  object FontsChangeBtn: TButton
+    Left = 320
+    Top = 56
+    Width = 105
+    Height = 33
+    Caption = #23383#22411#35722#21270
+    TabOrder = 10
+    OnClick = FontsChangeBtnClick
+  end
 end

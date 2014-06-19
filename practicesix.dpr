@@ -13,7 +13,8 @@ uses
   NumOutputUnit in 'NumOutputUnit.pas' {Numoutputform},
   EasyMultTableUnit in 'EasyMultTableUnit.pas' {EasyMultTableForm},
   SeqSerchUnit in 'SeqSerchUnit.pas' {SeqSerchForm},
-  PlanetComboxUnit in 'PlanetComboxUnit.pas' {PlanetComBoxForm};
+  PlanetComboxUnit in 'PlanetComboxUnit.pas' {PlanetComBoxForm},
+  FontsChangeUnit in 'FontsChangeUnit.pas' {FontsChangeForm};
 
 {$R *.res}
 
@@ -31,5 +32,6 @@ begin
   Application.CreateForm(TEasyMultTableForm, EasyMultTableForm);
   Application.CreateForm(TSeqSerchForm, SeqSerchForm);
   Application.CreateForm(TPlanetComBoxForm, PlanetComBoxForm);
+  Application.CreateForm(TFontsChangeForm, FontsChangeForm);
   Application.Run;
 end.
