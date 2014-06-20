@@ -112,4 +112,13 @@ object SixPractice: TSixPractice
     TabOrder = 10
     OnClick = FontsChangeBtnClick
   end
+  object SeqBtn: TButton
+    Left = 320
+    Top = 120
+    Width = 105
+    Height = 33
+    Caption = #25976#23383#25490#24207
+    TabOrder = 11
+    OnClick = SeqBtnClick
+  end
 end

@@ -20,6 +20,7 @@ type
     SeqSrachBtn: TButton;
     PlanetSerchBtn: TButton;
     FontsChangeBtn: TButton;
+    SeqBtn: TButton;
     procedure EasyNumCalBtnClick(Sender: TObject);
     procedure EasyCircleCalBtnClick(Sender: TObject);
     procedure CutNumVauleBtn2Click(Sender: TObject);
@@ -31,6 +32,7 @@ type
     procedure SeqSrachBtnClick(Sender: TObject);
     procedure PlanetSerchBtnClick(Sender: TObject);
     procedure FontsChangeBtnClick(Sender: TObject);
+    procedure SeqBtnClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -47,7 +49,7 @@ implementation
 uses
 EasyNumCalUnit, EasyCircleCalUnit, CutNumVauleUnit ,EasyTaxesTrialUnit,
 EasyTempConverUnit, EasyNumlistCalUnit, NumOutputUnit, EasyMultTableUnit,
-SeqSerchUnit, PlanetComBoxUnit, FontsChangeUnit;
+SeqSerchUnit, PlanetComBoxUnit, FontsChangeUnit, SeqUnit;
 
 procedure TSixPractice.EasyCircleCalBtnClick(Sender: TObject);
 begin
@@ -92,6 +94,11 @@ end;
 procedure TSixPractice.PlanetSerchBtnClick(Sender: TObject);
 begin
   PlanetComboxForm.ShowModal;
+end;
+
+procedure TSixPractice.SeqBtnClick(Sender: TObject);
+begin
+  SeqForm.showModal;
 end;
 
 procedure TSixPractice.SeqSrachBtnClick(Sender: TObject);

@@ -14,7 +14,8 @@ uses
   EasyMultTableUnit in 'EasyMultTableUnit.pas' {EasyMultTableForm},
   SeqSerchUnit in 'SeqSerchUnit.pas' {SeqSerchForm},
   PlanetComboxUnit in 'PlanetComboxUnit.pas' {PlanetComBoxForm},
-  FontsChangeUnit in 'FontsChangeUnit.pas' {FontsChangeForm};
+  FontsChangeUnit in 'FontsChangeUnit.pas' {FontsChangeForm},
+  SeqUnit in 'SeqUnit.pas' {SeqForm};
 
 {$R *.res}
 
@@ -33,5 +34,6 @@ begin
   Application.CreateForm(TSeqSerchForm, SeqSerchForm);
   Application.CreateForm(TPlanetComBoxForm, PlanetComBoxForm);
   Application.CreateForm(TFontsChangeForm, FontsChangeForm);
+  Application.CreateForm(TSeqForm, SeqForm);
   Application.Run;
 end.
