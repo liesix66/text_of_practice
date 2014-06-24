@@ -121,4 +121,13 @@ object SixPractice: TSixPractice
     TabOrder = 11
     OnClick = SeqBtnClick
   end
+  object OrderFoodBtn: TButton
+    Left = 320
+    Top = 184
+    Width = 105
+    Height = 33
+    Caption = #40670#39184#31995#32113
+    TabOrder = 12
+    OnClick = OrderFoodBtnClick
+  end
 end

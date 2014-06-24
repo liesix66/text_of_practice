@@ -15,7 +15,8 @@ uses
   SeqSerchUnit in 'SeqSerchUnit.pas' {SeqSerchForm},
   PlanetComboxUnit in 'PlanetComboxUnit.pas' {PlanetComBoxForm},
   FontsChangeUnit in 'FontsChangeUnit.pas' {FontsChangeForm},
-  SeqUnit in 'SeqUnit.pas' {SeqForm};
+  SeqUnit in 'SeqUnit.pas' {SeqForm},
+  OrderFoodUnit in 'OrderFoodUnit.pas' {OrderFoodForm};
 
 {$R *.res}
 
@@ -35,5 +36,6 @@ begin
   Application.CreateForm(TPlanetComBoxForm, PlanetComBoxForm);
   Application.CreateForm(TFontsChangeForm, FontsChangeForm);
   Application.CreateForm(TSeqForm, SeqForm);
+  Application.CreateForm(TOrderFoodForm, OrderFoodForm);
   Application.Run;
 end.

@@ -21,6 +21,7 @@ type
     PlanetSerchBtn: TButton;
     FontsChangeBtn: TButton;
     SeqBtn: TButton;
+    OrderFoodBtn: TButton;
     procedure EasyNumCalBtnClick(Sender: TObject);
     procedure EasyCircleCalBtnClick(Sender: TObject);
     procedure CutNumVauleBtn2Click(Sender: TObject);
@@ -33,6 +34,7 @@ type
     procedure PlanetSerchBtnClick(Sender: TObject);
     procedure FontsChangeBtnClick(Sender: TObject);
     procedure SeqBtnClick(Sender: TObject);
+    procedure OrderFoodBtnClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -49,7 +51,8 @@ implementation
 uses
 EasyNumCalUnit, EasyCircleCalUnit, CutNumVauleUnit ,EasyTaxesTrialUnit,
 EasyTempConverUnit, EasyNumlistCalUnit, NumOutputUnit, EasyMultTableUnit,
-SeqSerchUnit, PlanetComBoxUnit, FontsChangeUnit, SeqUnit;
+SeqSerchUnit, PlanetComBoxUnit, FontsChangeUnit, SeqUnit,
+OrderFoodUnit;
 
 procedure TSixPractice.EasyCircleCalBtnClick(Sender: TObject);
 begin
@@ -89,6 +92,11 @@ end;
 procedure TSixPractice.NumOutputBtnClick(Sender: TObject);
 begin
   NumOutputForm.ShowModal;
+end;
+
+procedure TSixPractice.OrderFoodBtnClick(Sender: TObject);
+begin
+  OrderFoodForm.ShowModal;
 end;
 
 procedure TSixPractice.PlanetSerchBtnClick(Sender: TObject);
