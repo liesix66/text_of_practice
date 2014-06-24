@@ -16,7 +16,8 @@ uses
   PlanetComboxUnit in 'PlanetComboxUnit.pas' {PlanetComBoxForm},
   FontsChangeUnit in 'FontsChangeUnit.pas' {FontsChangeForm},
   SeqUnit in 'SeqUnit.pas' {SeqForm},
-  OrderFoodUnit in 'OrderFoodUnit.pas' {OrderFoodForm};
+  OrderFoodUnit in 'OrderFoodUnit.pas' {OrderFoodForm},
+  StudInputUnit in 'StudInputUnit.pas' {StudInputForm};
 
 {$R *.res}
 
@@ -37,5 +38,6 @@ begin
   Application.CreateForm(TFontsChangeForm, FontsChangeForm);
   Application.CreateForm(TSeqForm, SeqForm);
   Application.CreateForm(TOrderFoodForm, OrderFoodForm);
+  Application.CreateForm(TStudInputForm, StudInputForm);
   Application.Run;
 end.

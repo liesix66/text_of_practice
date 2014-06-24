@@ -130,4 +130,13 @@ object SixPractice: TSixPractice
     TabOrder = 12
     OnClick = OrderFoodBtnClick
   end
+  object StudInputBtn: TButton
+    Left = 320
+    Top = 240
+    Width = 105
+    Height = 33
+    Caption = #23416#29983#36039#35338#36664#20837#31995#32113
+    TabOrder = 13
+    OnClick = StudInputBtnClick
+  end
 end
