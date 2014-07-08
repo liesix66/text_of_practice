@@ -2,8 +2,8 @@ object EasyTaxesTrialForm: TEasyTaxesTrialForm
   Left = 0
   Top = 0
   Caption = 'EasyTaxesTrialForm'
-  ClientHeight = 302
-  ClientWidth = 361
+  ClientHeight = 411
+  ClientWidth = 402
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -61,6 +61,97 @@ object EasyTaxesTrialForm: TEasyTaxesTrialForm
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 16
+    Top = 256
+    Width = 128
+    Height = 16
+    Caption = 'P.S.'#19968#20849#26377#20116#20491#32026#36317
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 16
+    Top = 281
+    Width = 320
+    Height = 16
+    Caption = #31532#19968#32026#36317#28858#24180#25910'52'#33836#20839#65292#31532#20108#32026#36317#28858#24180#25910'117'#33836#20839
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 16
+    Top = 306
+    Width = 327
+    Height = 16
+    Caption = #31532#19977#32026#36317#28858#24180#25910'235'#33836#20839#65292#31532#22235#32026#36317#28858#24180#25910'440'#33836#20839
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 16
+    Top = 331
+    Width = 156
+    Height = 16
+    Caption = #31532#20116#32026#36317#28858#24180#25910'440'#33836#19978
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 16
+    Top = 234
+    Width = 175
+    Height = 16
+    Caption = '('#26412#35336#31639#21443#32771#20013#33775#27665#22283#31237#21046')'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 16
+    Top = 353
+    Width = 378
+    Height = 16
+    Caption = #27599#32026#32026#36317#21487#25187#37329#38989#28858#65306'0'#12289'36400'#12289'130000'#12289'365000'#12289'805000'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 16
+    Top = 375
+    Width = 286
+    Height = 16
+    Caption = #35336#31639#20844#24335#65306#34218#36039'*'#31237#29575'('#21028#23450#32026#36317') - '#21487#25187#37329#38989
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False

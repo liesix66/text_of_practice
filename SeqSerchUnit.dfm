@@ -2,7 +2,7 @@ object SeqSerchForm: TSeqSerchForm
   Left = 0
   Top = 0
   Caption = 'SeqSerchForm'
-  ClientHeight = 394
+  ClientHeight = 554
   ClientWidth = 340
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -29,23 +29,37 @@ object SeqSerchForm: TSeqSerchForm
   end
   object Label3: TLabel
     Left = 24
-    Top = 272
-    Width = 76
+    Top = 237
+    Width = 114
     Height = 23
-    Caption = #32080#26524#28858#65306
+    Caption = #35442#38917#32080#26524#28858#65306
   end
   object Label4: TLabel
     Left = 24
     Top = 168
-    Width = 171
+    Width = 194
     Height = 16
-    Caption = #30446#21069#26368#22823#21487#26597#35426#20540#28858#65306'100'
+    Caption = #30446#21069#26368#22823#21487#26597#35426#38917#28858#65306#31532'88'#38917
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 24
+    Top = 387
+    Width = 133
+    Height = 23
+    Caption = #40643#37329#27604#20363#20540#28858#65306
+  end
+  object Label6: TLabel
+    Left = 24
+    Top = 309
+    Width = 152
+    Height = 23
+    Caption = #35442#38917#19979#38917#32080#26524#28858#65306
   end
   object Edit1: TEdit
     Left = 24
@@ -67,8 +81,8 @@ object SeqSerchForm: TSeqSerchForm
     TabOrder = 1
   end
   object Edit2: TEdit
-    Left = 106
-    Top = 264
+    Left = 24
+    Top = 266
     Width = 199
     Height = 31
     Alignment = taRightJustify
@@ -76,8 +90,8 @@ object SeqSerchForm: TSeqSerchForm
     Text = '0'
   end
   object CheckBtn: TButton
-    Left = 224
-    Top = 190
+    Left = 232
+    Top = 195
     Width = 81
     Height = 41
     Caption = #30906#35469
@@ -86,7 +100,7 @@ object SeqSerchForm: TSeqSerchForm
   end
   object ClearBtn: TButton
     Left = 24
-    Top = 328
+    Top = 488
     Width = 73
     Height = 39
     Caption = #28165#31354
@@ -95,11 +109,29 @@ object SeqSerchForm: TSeqSerchForm
   end
   object ExitBtn: TButton
     Left = 232
-    Top = 328
+    Top = 488
     Width = 73
     Height = 39
     Caption = #38626#38283
     TabOrder = 5
     OnClick = ExitBtnClick
+  end
+  object Edit3: TEdit
+    Left = 24
+    Top = 338
+    Width = 199
+    Height = 31
+    Alignment = taRightJustify
+    TabOrder = 6
+    Text = '0'
+  end
+  object Edit4: TEdit
+    Left = 24
+    Top = 432
+    Width = 199
+    Height = 31
+    Alignment = taRightJustify
+    TabOrder = 7
+    Text = '0'
   end
 end

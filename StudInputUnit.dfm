@@ -55,7 +55,6 @@ object StudInputForm: TStudInputForm
     Height = 142
     Align = alBottom
     TabOrder = 0
-    ExplicitWidth = 295
   end
   object Edit1: TEdit
     Left = 104

@@ -20,6 +20,10 @@ type
     ClearBtn: TButton;
     ExitBtn: TButton;
     Label4: TLabel;
+    Label5: TLabel;
+    Edit3: TEdit;
+    Label6: TLabel;
+    Edit4: TEdit;
     procedure CheckBtnClick(Sender: TObject);
     procedure ClearBtnClick(Sender: TObject);
     procedure ExitBtnClick(Sender: TObject);
@@ -37,7 +41,7 @@ implementation
 {$R *.dfm}
 
 procedure TSeqSerchForm.CheckBtnClick(Sender: TObject);
-const MaxCount = 100 ;
+const MaxCount = 88 ;
 const Maxlist = 0 ;
 Var FibNum, InputNum, ListCount : integer ;
 Var FibNum1, FibNum2, FibNumRam : Int64 ;
@@ -77,6 +81,7 @@ begin
       Exit;
     end;
 
+
     if InputNum > 1 then
     begin
       for FibNum := 0 to InputNum do
@@ -87,6 +92,21 @@ begin
 
         Edit2.Text := IntToStr(FibNumRam);
       end;
+
+      FibNum1 := 0 ;
+      FibNum2 := 1 ;
+
+      for FibNum := 0 to InputNum + 1 do
+      begin
+        FibNumRam := FibNum1 + FibNum2 ;
+        FibNum1 := FibNum2 ;
+        FibNum2 := FibNumRam ;
+
+        Edit3.Text := IntToStr(FibNumRam);
+      end;
+
+      Edit4.Text := FloatToStr(StrToFloat(Edit3.Text) / StrToFloat(Edit2.Text));
+
     end;
     //費式計算完畢
   end;

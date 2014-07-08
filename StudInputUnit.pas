@@ -50,6 +50,9 @@ implementation
 
 {$R *.dfm}
 
+uses
+commonUnit;
+
 procedure TStudInputForm.FormCreate(Sender: TObject);
 begin
   strCount := 0 ;
@@ -88,7 +91,7 @@ begin
 end;
 
 procedure TStudInputForm.LoadBtnClick(Sender: TObject);
-Var fileName : string ;
+Var fileName   : string ;
 Var openDialog : TOpenDialog;
 Var chkdata : integer ;
 begin
@@ -99,20 +102,28 @@ begin
   If Opendialog1.Execute Then
   begin
     fileName := openDialog.FileName;
+    StrCount := 0 ;
+  end else
+  begin
+    exit ;
   end;
+
   Memo2.Lines.LoadFromFile(Opendialog1.FileName);
 
   chkdata := pos('學生姓名',Memo2.Lines.Text);
 
   if chkdata <> 0 then
   begin
-    Memo1.Lines.Text := Memo2.Lines.Text ;
+    Memo1.Lines.LoadFromFile(Opendialog1.FileName);
+    Memo2.Lines.text := '' ;
   end else
   begin
     showmessage('沒有相符合的資料');
     Memo1.Lines.Text := '' ;
     Exit ;
   end;
+
+
 
 end;
 
@@ -123,8 +134,9 @@ begin
   hadString  := pos('學生姓名',Memo1.Lines.Text);
 
   if hadString <> 0 then
-
   begin
+  Memo1.Lines.Add( '記數' + IntToStr(StrCount)+'次');
+
   SaveFind := TMemoryStream.Create;
   Memo1.Lines.SaveToStream(SaveFind);
   SaveFind.SaveToFile('C:\StudentData.txt');

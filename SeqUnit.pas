@@ -20,6 +20,9 @@ type
     ReveBtn: TButton;
     BackBtn: TButton;
     CulTimeBtn: TButton;
+    Label2: TLabel;
+    Edit2: TEdit;
+    ChkBtn2: TButton;
 
     procedure ChkBtnClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -28,6 +31,7 @@ type
     procedure CulTimeBtnClick(Sender: TObject);
     procedure ClearBtnClick(Sender: TObject);
     procedure ReveBtnClick(Sender: TObject);
+    procedure ChkBtn2Click(Sender: TObject);
   private
     memoList : array [1..8] of Integer  ;
     memoCount : integer ;
@@ -50,12 +54,38 @@ begin
   hadReve := False ;
 end;
 
+procedure TSeqForm.ChkBtn2Click(Sender: TObject);
+Var inputString, listSer : Integer ;
+begin
+  if memoCount = 0 then
+  begin
+    showmessage('請輸入數字');
+    Exit ;
+  end;
+
+  inputString := StrToInt(Edit2.Text);
+
+  for listSer := 1 to memoCount do
+  begin
+    if inputString = memolist[listSer] then
+    begin
+      showmessage('We Got it') ;
+      Exit ;
+    end else
+    begin
+      showmessage('Sorry,Sir. We Cant Find this Count. ') ;
+      Exit ;
+    end;
+  end;
+
+end;
+
 procedure TSeqForm.ChkBtnClick(Sender: TObject);
-Var memo_string : integer ;
-Var poserach : integer ;
+//Var memo_string : integer ;
+//Var poserach : integer ;
 begin
 
-  for memo_string := 0 to maxstring do
+{*/  for memo_string := 0 to maxstring do
   begin
     poserach := pos(edit1.Text,memo1.Text) ;
 
@@ -65,9 +95,15 @@ begin
       exit ;
     end;
   end;
-
-  Inc(maxstRing);
+/*}
+  Inc(maxString);
   Inc(memoCount);
+
+  if memoCount = 0 then
+  begin
+     showmessage('請輸入數字');
+     Exit ;
+  end;
 
   if memoCount > 8 then
   begin
@@ -85,18 +121,24 @@ Var bforCount, aterCount : integer ;
 Var Num : integer ;
 Var CulTime : array[1..8] of integer ;
 begin
-  for bforCount := 1 to 8 do
+  for bforCount := 1 to memoCount do
   begin
     Num := 1 ;
-    for aterCount := 1 to 8 do
+    for aterCount := bforCount to memoCount do
     begin
-      if bforCount > aterCount then
+      if bforCount <> aterCount then
       begin
         if memolist[bforCount] > memolist[aterCount] then
         begin
           //如果前項大於後項，名次就加1
           Inc(Num);
         end;
+
+        if memolist[bforCount] = memolist[aterCount] then
+        begin
+          Inc(Num);
+        end;
+
       end; //不檢查自己
     end;
     //記錄該項的名次
@@ -106,7 +148,7 @@ begin
   memo1.Lines.Text:= '';
 
   //開始添加值
-  for Num := 1 to 8 do
+  for Num := 1 to memoCount do
   begin
     memo1.Lines.ADD(
     IntToStr(Cultime[Num])
@@ -114,6 +156,7 @@ begin
   end;
 
   ReveBtn.Visible := True;
+  hadReve := False ;
 end;
 
 procedure TSeqForm.BubbleSortBtnClick(Sender: TObject);
@@ -121,9 +164,9 @@ Var Count : integer ;
 Var bforCount, aterCount : integer ;
 Var aterVaule, bforVaule : integer ;
 begin
-  for bforCount := 1 to 8 do
+  for bforCount := 1 to memoCount do
   begin
-    for aterCount := 1 to 8 do
+    for aterCount := 1 to memoCount do
     begin
       //不跟自己比較
       if bforCount <> aterCount then
@@ -144,7 +187,7 @@ begin
   memo1.Lines.Text:= '';
 
   //開始添加值
-  for Count := 1 to 8 do
+  for Count := 1 to memoCount do
   begin
     memo1.Lines.ADD(
     IntToStr(memolist[Count])
@@ -152,7 +195,7 @@ begin
   end;
 
   ReveBtn.Visible := True;
-
+  hadReve := False ;
 end;
 
 procedure TSeqForm.ReveBtnClick(Sender: TObject);
@@ -161,9 +204,9 @@ Var ReveList : array [1..8] of integer ;
 begin
   if hadReve = False then
   begin
-    listLength := length(memolist);
+    listLength := memoCount;
 
-    for ReveCount := 1 to length(memoList) do
+    for ReveCount := 1 to memoCount do
     begin
       ReveList[ReveCount] := memolist[listlength] ;
       Dec(listLength);
@@ -171,7 +214,7 @@ begin
 
     memo1.Lines.Text:= '';
 
-    for ReveCount := 1 to length(reveList) do
+    for ReveCount := 1 to memoCount do
     begin
       memo1.Lines.Add(
       IntToStr(reveList[ReveCount])
@@ -182,7 +225,9 @@ begin
 
   end else
   begin
-    for ReveCount := 1 to length(reveList) do
+    memo1.Lines.Text:= '';
+
+    for ReveCount := 1 to memoCount do
     begin
       memo1.Lines.ADD(
       IntToStr(memolist[ReveCount])

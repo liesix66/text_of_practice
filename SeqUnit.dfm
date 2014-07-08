@@ -2,8 +2,8 @@ object SeqForm: TSeqForm
   Left = 0
   Top = 0
   Caption = 'SeqForm'
-  ClientHeight = 262
-  ClientWidth = 323
+  ClientHeight = 371
+  ClientWidth = 326
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,6 +19,13 @@ object SeqForm: TSeqForm
     Width = 114
     Height = 23
     Caption = #36664#20837#31532#19968#20491#25976
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 232
+    Width = 152
+    Height = 23
+    Caption = #36984#25799#35201#25214#30340#25976#20540#65306
   end
   object Memo1: TMemo
     Left = 0
@@ -68,8 +75,8 @@ object SeqForm: TSeqForm
     OnClick = BubbleSortBtnClick
   end
   object ExitBtn: TButton
-    Left = 256
-    Top = 183
+    Left = 197
+    Top = 330
     Width = 59
     Height = 33
     Caption = #38626#38283
@@ -102,5 +109,23 @@ object SeqForm: TSeqForm
     Caption = #35352#25976#25490#24207
     TabOrder = 8
     OnClick = CulTimeBtnClick
+  end
+  object Edit2: TEdit
+    Left = 176
+    Top = 232
+    Width = 80
+    Height = 31
+    Alignment = taRightJustify
+    TabOrder = 9
+    Text = '0'
+  end
+  object ChkBtn2: TButton
+    Left = 8
+    Top = 270
+    Width = 75
+    Height = 30
+    Caption = #32218#24615#25628#23563
+    TabOrder = 10
+    OnClick = ChkBtn2Click
   end
 end
