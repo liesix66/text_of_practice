@@ -124,26 +124,25 @@ begin
   for bforCount := 1 to memoCount do
   begin
     Num := 1 ;
-    for aterCount := bforCount to memoCount do
+    for aterCount := 1 to memoCount do
     begin
       if bforCount <> aterCount then
       begin
         if memolist[bforCount] > memolist[aterCount] then
         begin
-          //如果前項大於後項，名次就加1
           Inc(Num);
         end;
-
         if memolist[bforCount] = memolist[aterCount] then
         begin
-          Inc(Num);
+          showmessage('目前無法解決重複數的顯示，請重新輸入');
+          Exit;
         end;
-
       end; //不檢查自己
     end;
-    //記錄該項的名次
     Cultime[Num] := memolist[bforCount] ;
   end;
+
+
 
   memo1.Lines.Text:= '';
 

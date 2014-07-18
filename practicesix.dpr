@@ -17,7 +17,8 @@ uses
   FontsChangeUnit in 'FontsChangeUnit.pas' {FontsChangeForm},
   SeqUnit in 'SeqUnit.pas' {SeqForm},
   OrderFoodUnit in 'OrderFoodUnit.pas' {OrderFoodForm},
-  StudInputUnit in 'StudInputUnit.pas' {StudInputForm};
+  StudInputUnit in 'StudInputUnit.pas' {StudInputForm},
+  StringAddPassUnit in 'StringAddPassUnit.pas' {StringAddPassForm};
 
 {$R *.res}
 
@@ -39,5 +40,6 @@ begin
   Application.CreateForm(TSeqForm, SeqForm);
   Application.CreateForm(TOrderFoodForm, OrderFoodForm);
   Application.CreateForm(TStudInputForm, StudInputForm);
+  Application.CreateForm(TStringAddPassForm, StringAddPassForm);
   Application.Run;
 end.

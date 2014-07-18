@@ -2,8 +2,8 @@ object SixPractice: TSixPractice
   Left = 0
   Top = 0
   Caption = 'SixPractice'
-  ClientHeight = 359
-  ClientWidth = 473
+  ClientHeight = 375
+  ClientWidth = 580
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -138,5 +138,14 @@ object SixPractice: TSixPractice
     Caption = #23416#29983#36039#35338#36664#20837#31995#32113
     TabOrder = 13
     OnClick = StudInputBtnClick
+  end
+  object Button1: TButton
+    Left = 320
+    Top = 296
+    Width = 105
+    Height = 33
+    Caption = #23383#20018#21152#23494
+    TabOrder = 14
+    OnClick = Button1Click
   end
 end

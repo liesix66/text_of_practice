@@ -23,6 +23,7 @@ type
     SeqBtn: TButton;
     OrderFoodBtn: TButton;
     StudInputBtn: TButton;
+    Button1: TButton;
     procedure EasyNumCalBtnClick(Sender: TObject);
     procedure EasyCircleCalBtnClick(Sender: TObject);
     procedure CutNumVauleBtn2Click(Sender: TObject);
@@ -37,6 +38,7 @@ type
     procedure SeqBtnClick(Sender: TObject);
     procedure OrderFoodBtnClick(Sender: TObject);
     procedure StudInputBtnClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -54,7 +56,7 @@ uses
 EasyNumCalUnit, EasyCircleCalUnit, CutNumVauleUnit ,EasyTaxesTrialUnit,
 EasyTempConverUnit, EasyNumlistCalUnit, NumOutputUnit, EasyMultTableUnit,
 SeqSerchUnit, PlanetComBoxUnit, FontsChangeUnit, SeqUnit,
-OrderFoodUnit, StudInputUnit;
+OrderFoodUnit, StudInputUnit, StringAddPassUnit;
 
 procedure TSixPractice.EasyCircleCalBtnClick(Sender: TObject);
 begin
@@ -119,6 +121,11 @@ end;
 procedure TSixPractice.StudInputBtnClick(Sender: TObject);
 begin
   StudInputForm.ShowModal;
+end;
+
+procedure TSixPractice.Button1Click(Sender: TObject);
+begin
+  StringAddPassForm.ShowModal;
 end;
 
 procedure TSixPractice.CutNumVauleBtn2Click(Sender: TObject);
