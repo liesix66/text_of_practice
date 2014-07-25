@@ -28,7 +28,7 @@ object SeqForm: TSeqForm
     Caption = #36984#25799#35201#25214#30340#25976#20540#65306
   end
   object Memo1: TMemo
-    Left = 0
+    Left = 8
     Top = 0
     Width = 121
     Height = 216

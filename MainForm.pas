@@ -23,7 +23,9 @@ type
     SeqBtn: TButton;
     OrderFoodBtn: TButton;
     StudInputBtn: TButton;
-    Button1: TButton;
+    BtnStringAddPass: TButton;
+    BtnWordSeq: TButton;
+    BtnChkdate: TButton;
     procedure EasyNumCalBtnClick(Sender: TObject);
     procedure EasyCircleCalBtnClick(Sender: TObject);
     procedure CutNumVauleBtn2Click(Sender: TObject);
@@ -38,7 +40,9 @@ type
     procedure SeqBtnClick(Sender: TObject);
     procedure OrderFoodBtnClick(Sender: TObject);
     procedure StudInputBtnClick(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
+    procedure BtnStringAddPassClick(Sender: TObject);
+    procedure BtnWordSeqClick(Sender: TObject);
+    procedure BtnChkdateClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -56,7 +60,7 @@ uses
 EasyNumCalUnit, EasyCircleCalUnit, CutNumVauleUnit ,EasyTaxesTrialUnit,
 EasyTempConverUnit, EasyNumlistCalUnit, NumOutputUnit, EasyMultTableUnit,
 SeqSerchUnit, PlanetComBoxUnit, FontsChangeUnit, SeqUnit,
-OrderFoodUnit, StudInputUnit, StringAddPassUnit;
+OrderFoodUnit, StudInputUnit, StringAddPassUnit, WordSeqUnit, checkdateUnit ;
 
 procedure TSixPractice.EasyCircleCalBtnClick(Sender: TObject);
 begin
@@ -123,9 +127,19 @@ begin
   StudInputForm.ShowModal;
 end;
 
-procedure TSixPractice.Button1Click(Sender: TObject);
+procedure TSixPractice.BtnChkdateClick(Sender: TObject);
+begin
+  ChkDateForm.showmodal;
+end;
+
+procedure TSixPractice.BtnStringAddPassClick(Sender: TObject);
 begin
   StringAddPassForm.ShowModal;
+end;
+
+procedure TSixPractice.BtnWordSeqClick(Sender: TObject);
+begin
+  WordSeqForm.ShowModal;
 end;
 
 procedure TSixPractice.CutNumVauleBtn2Click(Sender: TObject);

@@ -18,7 +18,9 @@ uses
   SeqUnit in 'SeqUnit.pas' {SeqForm},
   OrderFoodUnit in 'OrderFoodUnit.pas' {OrderFoodForm},
   StudInputUnit in 'StudInputUnit.pas' {StudInputForm},
-  StringAddPassUnit in 'StringAddPassUnit.pas' {StringAddPassForm};
+  StringAddPassUnit in 'StringAddPassUnit.pas' {StringAddPassForm},
+  WordSeqUnit in 'WordSeqUnit.pas' {WordSeqForm},
+  CheckDateUnit in 'CheckDateUnit.pas' {ChkDateForm};
 
 {$R *.res}
 
@@ -41,5 +43,7 @@ begin
   Application.CreateForm(TOrderFoodForm, OrderFoodForm);
   Application.CreateForm(TStudInputForm, StudInputForm);
   Application.CreateForm(TStringAddPassForm, StringAddPassForm);
+  Application.CreateForm(TWordSeqForm, WordSeqForm);
+  Application.CreateForm(TChkDateForm, ChkDateForm);
   Application.Run;
 end.

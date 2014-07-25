@@ -139,13 +139,31 @@ object SixPractice: TSixPractice
     TabOrder = 13
     OnClick = StudInputBtnClick
   end
-  object Button1: TButton
+  object BtnStringAddPass: TButton
     Left = 320
     Top = 296
     Width = 105
     Height = 33
     Caption = #23383#20018#21152#23494
     TabOrder = 14
-    OnClick = Button1Click
+    OnClick = BtnStringAddPassClick
+  end
+  object BtnWordSeq: TButton
+    Left = 467
+    Top = 56
+    Width = 105
+    Height = 33
+    Caption = #23383#20018#25490#24207
+    TabOrder = 15
+    OnClick = BtnWordSeqClick
+  end
+  object BtnChkdate: TButton
+    Left = 467
+    Top = 120
+    Width = 105
+    Height = 33
+    Caption = #27298#26597#26085#26399
+    TabOrder = 16
+    OnClick = BtnChkdateClick
   end
 end
